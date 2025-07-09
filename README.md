@@ -1,13 +1,12 @@
 # MyRDK-X5
-* 项目名：基于RDK X5的幼儿监伴陪护机器人。
-
-* 包含3个子目录：RDKX5_Demo、STM32_Demo、Wechat_miniAPP。
+* Project Name: Child Monitoring and Companion Robot Based on RDK X5.
+* Contains three subdirectories: RDKX5_Demo, STM32_Demo, Wechat_miniAPP.
 
 # RDKX5_Demo
-* 是主控RDK端的运行代码，操作系统为RDK X5自带的Ubuntu 22.04，基于ROS2 Humble进行开发。主要包括的功能有：语音识别和声源定位、智能语音交互、手势识别、视觉跟随、摔倒检测、涉及小程序通信的MQTT节点等。详见对应子目录内的说明文档。
+* This is the operating code for the main control RDK end, with the operating system being Ubuntu 22.04 provided by RDK X5, and developed based on ROS2 Humble. The main functionalities include: speech recognition and sound source localization, intelligent voice interaction, gesture recognition, visual tracking, fall detection, MQTT nodes related to mini-program communication, etc. For more details, refer to the documentation in the respective subdirectory.
 
 # STM32_Demo
-* 是从控STM32端的运行代码，基于STM32CubeMX + Keil使用HAL库进行开发。主要包含的功能有：PID和电机控制、MPU6050模块驱动、WS2812模块驱动等，和主控之间采用串口进行通讯。详见对应子目录内的说明文档。
+* This is the operating code for the slave control STM32 end, developed using STM32CubeMX + Keil with the HAL library. The main functionalities include: PID and motor control, MPU6050 module driving, WS2812 module driving, etc., with serial communication between the main control and slave. For more details, refer to the documentation in the respective subdirectory.
 
 # Wechat_miniAPP
-* 是微信小程序端的开发代码，基于微信开发者工具进行开发，主要使用JavaScript语言。包含了一个主界面和一个遥控界面，主要包括的功能有：调用MQTT服务、自主订阅话题信息并滚屏显示、自主输入并发布文本、多指触控检测、遥控信息发布等。详见对应子目录内的说明文档。
+* This is the development code for the WeChat mini-program, developed using the WeChat Developer Tool, primarily in JavaScript. It includes a main interface and a remote control interface, with key functionalities such as: invoking MQTT service, subscribing to topics and displaying them in a scrolling manner, inputting and publishing text, multi-touch detection, and remote control information publishing. For more details, refer to the documentation in the respective subdirectory.
