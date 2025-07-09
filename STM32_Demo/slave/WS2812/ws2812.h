@@ -5,7 +5,6 @@
 #define WS2812_LED_NUM		8									//灯珠数量
 #define WS2812_BUF_SIZE		WS2812_LED_NUM * 24 + 2				//单次字节数
 
-void WS2812_Refresh(const uint8_t pixel[WS2812_LED_NUM][3]);	//颜色刷新
 void RGB_SetFullColor(uint8_t r, uint8_t g, uint8_t b);			//设置纯色
 void RGBset_mode1(float time);	//渐变纯色
 void RGBset_mode2(float time);	//渐变流水

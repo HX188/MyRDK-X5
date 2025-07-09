@@ -3,7 +3,7 @@
 <title>Static Call Graph - [slave\slave.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image slave\slave.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Jul 08 23:39:57 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Jul 09 12:10:26 2025
 <BR><P>
 <H3>Maximum Stack Usage =        456 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1828,21 +1828,6 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xe.o(RESET)
 </UL>
-<P><STRONG><a name="[ee]"></a>WS2812_Refresh</STRONG> (Thumb, 164 bytes, Stack size 24 bytes, ws2812.o(i.WS2812_Refresh))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = WS2812_Refresh &rArr; HAL_SPI_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
-</UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit_DMA
-</UL>
-<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode8
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode7
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode6
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode5
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode4
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode3
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode2
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGB_SetFullColor
-</UL>
-
 <P><STRONG><a name="[103]"></a>__0printf</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
@@ -2811,6 +2796,21 @@ Local Symbols
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
+</UL>
+
+<P><STRONG><a name="[ee]"></a>WS2812_Refresh</STRONG> (Thumb, 164 bytes, Stack size 24 bytes, ws2812.o(i.WS2812_Refresh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = WS2812_Refresh &rArr; HAL_SPI_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit_DMA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode8
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode7
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode6
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode5
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode4
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode3
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGBset_mode2
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGB_SetFullColor
 </UL>
 
 <P><STRONG><a name="[139]"></a>set_int_enable</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, inv_mpu.o(i.set_int_enable))

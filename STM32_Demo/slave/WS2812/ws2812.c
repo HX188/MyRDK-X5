@@ -12,7 +12,7 @@ static uint8_t Pixelset[WS2812_LED_NUM][3] = {0x00};
 /*************************************************/
 /*****************  灯带颜色设置  ******************/
 /*************************************************/
-void WS2812_Refresh(const uint8_t pixel[WS2812_LED_NUM][3])
+static void WS2812_Refresh(const uint8_t pixel[WS2812_LED_NUM][3])
 {	//RGB数据编码到SPI码流并发送
 	int idx = 1;
 	SPI_Buffer1[0] = 0;					// 起始填充
