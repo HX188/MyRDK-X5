@@ -1,5 +1,6 @@
 # STM32_Demo
-本目录下的子文件夹slave即为从控STM32端的代码工程。
+* 本目录下的子文件夹slave即为从控STM32端的代码工程。
+
 * 开发平台：STM32CubeMX + Keil；
 * 代码库：HAL库；
 * 使用芯片：STM32F103RCT6；
